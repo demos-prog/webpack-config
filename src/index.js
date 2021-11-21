@@ -1,5 +1,7 @@
+import "./styles.scss";
+
 let form = document.querySelector("form");
-let input = form.querySelector("input[type=number]");
+let input = form.querySelector("input[type=text]");
 
 async function senData(value) {
   let res = await fetch("https://jsonplaceholder.typicode.com/posts", {

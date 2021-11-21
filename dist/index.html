@@ -7,10 +7,16 @@
     <title>test task</title>
   </head>
   <body>
-    <form>
-      <input required="required" type="number" placeholder="Ваш номер ..." />
-      <button type="submit">ЗАКАЗАТЬ</button>
-    </form>
+    <div id="wrapper">
+      <form>
+        <div class="elemWrapper">
+          <input required="required" type="text" placeholder="Ваш номер ..." />
+        </div>
+        <div class="elemWrapper red_bg">
+          <button type="submit">ЗАКАЗАТЬ</button>
+        </div>
+      </form>
+    </div>
     <script src="bundle.js"></script>
   </body>
 </html>
