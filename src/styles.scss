@@ -14,6 +14,7 @@
 // }
 
 #wrapper {
+  overflow: hidden;
   display: flex;
   justify-content: center;
   height: 200px;
@@ -31,6 +32,7 @@ form {
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.8);
 }
+
 input[type="text"],
 button {
   background-color: transparent;
@@ -42,6 +44,7 @@ button {
 input[type="text"] {
   width: 300px;
 }
+
 button {
   width: 100px;
   color: #fff;
@@ -51,4 +54,16 @@ button {
 
 .red_bg {
   background-color: red;
+}
+
+@media (max-width: 600px) {
+  .elemWrapper,
+  input[type="text"],
+  button {
+    transform: skewX(0);
+  }
+
+  input[type="text"] {
+    width: 120px;
+  }
 }
