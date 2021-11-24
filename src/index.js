@@ -3,7 +3,7 @@ import "./styles.scss";
 let form = document.querySelector("form");
 let input = form.querySelector("input[type=text]");
 
-async function senData(value) {
+async function sendData(value) {
   let res = await fetch("https://jsonplaceholder.typicode.com/posts", {
     method: "POST",
     headers: {
@@ -17,8 +17,7 @@ async function senData(value) {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  let value = input.value;
-  senData({ req: value }).then((res) => {
+  sendData({ req: input.value }).then((res) => {
     alert("answer is: " + res.req);
   });
   input.value = "";
